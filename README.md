@@ -79,6 +79,11 @@ Verify via PowerShell:
 (Get-FileHash .\ServerSecurityAudit.ps1 -Algorithm SHA256).Hash -eq "6BCD6B9B821DC997A19F78D7B545EFFCCEACBEA9F66883BE4F47C716EDB3559D"
 
 ```
+
+## API for audit reports
+
+The optional ASP.NET Core API accepts the machine-readable audit JSON and stores it in SQL Server without exposing a SQL endpoint to clients. See the [API setup and network requirements](AuditApi/README.md).
+
 ---
 
 **Author:** Konstantinos Xanthopoulos, Founder & Principal Consultant @ [Cyb3rint3l Labs](https://cyb3rint3l.tech)
